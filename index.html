@@ -48,14 +48,16 @@
 					<p class="info">Veamos cuánto talento tienes <br></br> Recuerda evitar los espacios y poner MAYÚSCULAS</p>
 				</header>
 				<form action="https://jantonioad.github.io/cassette/"> 
-				</label><br> <label for="pswd">Nombre del Usuario:
-					<br><input type="password" id="pswd"><br>
-			  </label><br> <label for="puente">Nombre del lugar:
-				<br><input type="password" id="puente"><br>
-			  </label><br> <label for="dirección">Escribe la dirección:
-				<br><input type="password" id="dirección"><br>
-			  </label><br> <label for="código">Escribe el código:
-				<br><input type="password" id="código"><br>
+					
+				    <label for="pswd">Nombre del Usuario:</label><br>
+					<input type="password" id="pswd" required><br>
+			        <label for="puente">Nombre del lugar:<label><br> 
+				    <input type="password" id="puente" required><br>
+			        <label for="dirección">Escribe la dirección:</label><br> 
+				    <input type="password" id="dirección" required><br>
+			        <label for="código">Escribe el código:</label><br>
+				    <input type="password" id="código" required><br>
+
 			  <br></br>
 			  
 				<input type="button" 
@@ -63,37 +65,38 @@
 			</form>
 			<!--Ajusta "clave" para cambiar el santo y seña-->
 			<script type="text/javascript">
-				function checkPswd() {
+
+		    function checkPswd() {
 					var confirmaPassword = "VictorSierra";
 					var password = document.getElementById("pswd").value;
 					if (password == confirmaPassword) {
 						 window.location="https://jantonioad.github.io/cassette/";
 					}
 					else{
-						alert("Codigo incorrecto");
-					  }
+						alert("Nombre incorrecto");
+					}
 				}
 					  
 			function checkPswd() {
-					var confirmaPassword="Puentedelossuspiros";
+					var confirmaPassword = "Puentedelossuspiros";
 					var password = document.getElementById("puente").value;
 					if (password == confirmaPassword) {
 						 window.location="https://jantonioad.github.io/cassette/";
 					}
 					else{
-						alert("Codigo incorrecto");
-					  }
+						alert("Lugar incorrecto, es más específico");
+					}
 				}
 			  
 			function checkPswd() {
-					var confirmaPassword="1751ParrociaS.MaríaGloriosaDeiIfrari";
+					var confirmaPassword = "1751ParrociaS.MaríaGloriosaDeiIfrari";
 					var password = document.getElementById("dirección").value;
 					if (password == confirmaPassword) {
 						 window.location="https://jantonioad.github.io/cassette/";
 					}
 					else{
-						alert("Codigo incorrecto");
-					  }
+						alert("Dirección incorrecta");
+					}
 				}
 			  
 			function checkPswd() {
