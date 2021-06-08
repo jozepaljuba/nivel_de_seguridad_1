@@ -11,7 +11,7 @@
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Primer nivel, veamos cuánto talento tienes</title>
+		<title>Primer nivel, veamos cuánto talento tienes, recuerda evitar los espacios y poner las MAYÚSCULAS</title>
 		<meta name="description" content="Visual feedback for password strength on an image that gets pixelated or blurred." />
 		<meta name="keywords" content="password strength, visual feedback, image, canvas, javascript, css, blur, pixelated" />
 		<meta name="author" content="Codrops" />
@@ -47,28 +47,66 @@
 					<h1 class="codrops-header__title">Vulnera el primer nivel de seguridad</h1>
 					<p class="info">Rellena los datos pedidos para poder continuar</p>
 				</header>
-				<form class="form" action="https://jantonioad.github.io/cassette/" method="">
-					<div class="form__item">
-						<label class="form__label" for="letras">Nombre del usuario</label>
-						<input class="form__input" type="letras" name="letras" required=" "  >
-					</div>
-					<div class="form__item">
-						<label class="form__label" for="letras">Lugar</label>
-						<input class="form__input" type="letras" name="letras" required=" " >
-					</div>
-					<div class="form__item">
-						<label class="form__label" for="password">Código postal</label>
-						<div class="form__input-wrap">
-							<input class="form__input" type="password" name="password" required=" " ">
-							<p class="form__password-strength" id="strength-output"></p>
-						</div>
-					</div>
-					<div class="form__item form__item--actions">
-						<span>Ahora solo debes </span>
-						<button>validar tus respuestas</button>
-						
-					</div>
-				</form>
+				<form action="https://jantonioad.github.io/cassette/"> 
+				</label><br> <label for="pswd">Nombre del Usuario:
+				<input type="password" id="pswd"><br>
+			  </label><br> <label for="lugar">Nombre del lugar:
+				<input type="password" id="lugar"><br>
+			  </label><br> <label for="dirección">Escribe la dirección:
+				<input type="password" id="dirección"><br>
+			  </label><br> <label for="código">Escribe el código:
+				<input type="password" id="código"><br>
+			  <br></br>
+			  
+				<input type="button" 
+					   value="Validar" onclick="checkPswd();" />
+			</form>
+			<!--Ajusta "clave" para cambiar el santo y seña-->
+			<script type="text/javascript">
+				function checkPswd() {
+					var confirmaPassword = "VictorSierra";
+					var password = document.getElementById("pswd").value;
+					if (password == confirmaPassword) {
+						 window.location="https://jantonioad.github.io/cassette/";
+					}
+					else{
+						alert("Codigo incorrecto");
+					  }
+				}
+					  
+			function checkPswd() {
+					var confirmaPassword = "Puentedelossuspiros";
+					var password = document.getElementById("lugar").value;
+					if (password == confirmaPassword) {
+						 window.location="https://jantonioad.github.io/cassette/";
+					}
+					else{
+						alert("Codigo incorrecto");
+					  }
+				}
+			  
+			function checkPswd() {
+					var confirmaPassword = "1751ParrociaS.MaríaGloriosaDeiIfrari";
+					var password = document.getElementById("dirección").value;
+					if (password == confirmaPassword) {
+						 window.location="https://jantonioad.github.io/cassette/";
+					}
+					else{
+						alert("Codigo incorrecto");
+					  }
+				}
+			  
+			function checkPswd() {
+					var confirmaPassword = "30172";
+					var password = document.getElementById("código").value;
+					if (password == confirmaPassword) {
+						 window.location="https://jantonioad.github.io/cassette/";
+					}
+					else{
+						alert("Codigo incorrecto");
+					}
+				}
+			</script>
 			</div>
 			<div class="content content--side">
 				<div class="poster" style="background-image:url(img/fondo\ 2.gif)"></div>
